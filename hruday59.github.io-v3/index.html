@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalluru Hruday Kumar Reddy | Data Analyst Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="toast" class="toast">Copied to clipboard!</div>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#top" class="brand-link">
+          <span class="brand-badge">HK</span>
+          <span>
+            <span class="brand-name">HRUDAY KUMAR</span>
+            <span class="brand-sub">DATA ANALYTICS</span>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary Navigation">
+          <a href="#projects">Projects (8)</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience &amp; Edu</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="https://github.com/hruday59" target="_blank" rel="noopener noreferrer" class="btn-secondary">GitHub</a>
+          <a href="https://www.linkedin.com/in/kalluru-hruday-kumar-reddy" target="_blank" rel="noopener noreferrer" class="btn-secondary">LinkedIn</a>
+          <button id="theme-toggle" type="button" class="icon-btn" aria-label="Toggle Theme">☾</button>
+          <button id="mobile-menu-btn" type="button" class="icon-btn mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="#projects">Projects (8)</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience &amp; Education</a>
+        <a href="#certifications">Certifications &amp; Achievements</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="container main-content">
+    <section class="hero-card">
+      <div>
+        <span class="status-pill"><span class="status-dot"></span>OPEN TO DATA ANALYST &amp; BI ROLES</span>
+        <h1 class="hero-title">KALLURU HRUDAY KUMAR REDDY</h1>
+        <p class="hero-role">Aspiring Data Analyst</p>
+        <p class="hero-summary">
+          Electronics and Communication Engineering student with a strong interest in data analytics. I use <strong>SQL (MySQL), Python, Excel and Power BI</strong> to clean data, find useful insights and build dashboards. I use AI tools to support my work, while business decisions stay with me.
+        </p>
+
+        <div class="contact-pills">
+          <span class="contact-pill">Miyapur, Hyderabad, Telangana</span>
+          <a href="tel:+917093069580" class="contact-pill">+91 7093069580</a>
+          <button type="button" class="contact-pill" onclick="copyText('vasanthreddy251@gmail.com', 'Email copied!')">
+            vasanthreddy251@gmail.com
+          </button>
+        </div>
+
+        <div class="hero-cta-row">
+          <a href="#projects" class="btn-primary">Explore 8 Portfolio Projects</a>
+          <a href="https://github.com/hruday59" target="_blank" rel="noopener noreferrer" class="btn-secondary">github.com/hruday59</a>
+          <a href="https://www.linkedin.com/in/kalluru-hruday-kumar-reddy" target="_blank" rel="noopener noreferrer" class="btn-secondary">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="kpi-panel">
+        <div class="kpi-header">
+          <span>CANDIDATE SNAPSHOT</span>
+          <span>2026–2027</span>
+        </div>
+        <div class="kpi-grid">
+          <div class="kpi-box">
+            <div class="kpi-label">Portfolio Projects</div>
+            <div class="kpi-value">8+</div>
+            <div class="kpi-note">End-to-End Analytics</div>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-label">B.Tech CGPA</div>
+            <div class="kpi-value">8.1/10</div>
+            <div class="kpi-note">JNTUA Anantapur ('27)</div>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-label">Certifications</div>
+            <div class="kpi-value">15+</div>
+            <div class="kpi-note">Data, AI, Java &amp; ECE</div>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-label">Core BI Stack</div>
+            <div class="kpi-value">SQL · Py · BI</div>
+            <div class="kpi-note">+ Excel &amp; DAX</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow">GitHub Portfolio · github.com/hruday59</span>
+          <h2 class="section-title">Analytics &amp; BI Case Studies</h2>
+          <p class="section-subtitle">Filter by analytics tool or open any case study for full details.</p>
+        </div>
+        <div class="filter-bar">
+          <button type="button" class="filter-btn active" data-project-filter="All">All (8)</button>
+          <button type="button" class="filter-btn" data-project-filter="Power BI">Power BI (2)</button>
+          <button type="button" class="filter-btn" data-project-filter="SQL">SQL (3)</button>
+          <button type="button" class="filter-btn" data-project-filter="Python">Python (2)</button>
+          <button type="button" class="filter-btn" data-project-filter="Excel">Excel (2)</button>
+        </div>
+      </div>
+      <div id="projects-grid" class="projects-grid"></div>
+    </section>
+
+    <section id="skills">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow">Capabilities &amp; Stack</span>
+          <h2 class="section-title">Technical Skills Matrix</h2>
+          <p class="section-subtitle">Search across SQL, Python, Power BI DAX, Excel, analytics concepts, and tools.</p>
+        </div>
+        <input id="skill-search" type="search" class="search-input" placeholder="Search skills (e.g., CTE, DAX, pandas)..." />
+      </div>
+      <div id="skills-grid" class="skills-grid"></div>
+    </section>
+
+    <section id="experience">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow">Background &amp; Academics</span>
+          <h2 class="section-title">Internship Experience &amp; Education</h2>
+        </div>
+      </div>
+
+      <div class="exp-edu-grid">
+        <div class="panel-card">
+          <span class="eyebrow">Internship Experience · 2026</span>
+          <h3 style="margin:6px 0 4px;font-size:20px;">Data Science and Data Engineering Intern</h3>
+          <p style="margin:0 0 14px;font-size:14px;font-weight:600;color:var(--brand);">SkillDzire Technologies (College-Oriented, Online)</p>
+          <ul style="margin:0;padding-left:18px;font-size:14px;color:var(--text-muted);">
+            <li style="margin-bottom:8px;">Performed end-to-end data cleaning, exploratory data analysis (EDA), and visualization on real-world datasets using Python.</li>
+            <li>Applied foundational machine learning concepts and data warehousing principles to structure analytical workflows.</li>
+          </ul>
+        </div>
+
+        <div class="panel-card">
+          <span class="eyebrow">Academic Timeline</span>
+          <div class="timeline-item">
+            <h3 style="margin:0;font-size:17px;">B.Tech, Electronics and Communication Engineering</h3>
+            <p class="cert-meta">JNTUA College of Engineering (Autonomous), Anantapur · Expected Graduation: 2027</p>
+            <p class="kpi-note" style="margin-top:6px;">Current CGPA: 8.1 / 10</p>
+          </div>
+          <div class="timeline-item">
+            <h3 style="margin:0;font-size:17px;">Intermediate / Class XII (2023)</h3>
+            <p class="cert-meta">Percentage: 94.4%</p>
+          </div>
+          <div class="timeline-item">
+            <h3 style="margin:0;font-size:17px;">SSC / Class X (2021)</h3>
+            <p class="cert-meta">Score: 100%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <div class="section-header">
+        <div>
+          <span class="eyebrow">Continuous Learning &amp; Impact</span>
+          <h2 class="section-title">Certifications &amp; Achievements</h2>
+          <p class="section-subtitle">15 certifications and extracurricular initiatives.</p>
+        </div>
+        <div class="filter-bar">
+          <button type="button" class="filter-btn active" data-cert-filter="All">All (15)</button>
+          <button type="button" class="filter-btn" data-cert-filter="Data &amp; AI">Data &amp; AI (7)</button>
+          <button type="button" class="filter-btn" data-cert-filter="Programming &amp; Web">Programming &amp; Web (3)</button>
+          <button type="button" class="filter-btn" data-cert-filter="Aptitude &amp; Core ECE">Aptitude &amp; Core ECE (5)</button>
+        </div>
+      </div>
+
+      <div id="certs-grid" class="certs-grid"></div>
+
+      <div class="achievements-box">
+        <h3 style="margin:0;font-size:18px;">Achievements &amp; Extracurricular Activities</h3>
+        <div class="achievements-grid">
+          <div class="achievement-item">
+            <strong>Swarna Andhra — Government of Andhra Pradesh (2024)</strong>
+            <p class="cert-meta">State-level civic development and youth participation initiative.</p>
+          </div>
+          <div class="achievement-item">
+            <strong>Viksit Bharat Young Leaders Quiz — MyBharat (2025)</strong>
+            <p class="cert-meta">National-level youth leadership and general awareness competition.</p>
+          </div>
+          <div class="achievement-item">
+            <strong>Community Service Project (CSP) — Healthcare Awareness</strong>
+            <p class="cert-meta">Collected data on the most-used medicines from local medical shops and discussed proper medicine usage with the panchayat leader.</p>
+          </div>
+          <div class="achievement-item">
+            <strong>NSS Unit 3: Swachhata Hi Seva (2024) &amp; NSS Practice Unit</strong>
+            <p class="cert-meta">Participated in Swachhata Hi Seva and cleaned a railway station with the college NSS unit to raise awareness on waste disposal management.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-card">
+        <div>
+          <span class="eyebrow" style="color:var(--accent);">Get In Touch</span>
+          <h2 class="section-title" style="color:#ffffff;">Let's Discuss Data &amp; Analytics Opportunities</h2>
+          <p style="color:#cbd5e1;font-size:14px;margin-top:8px;">
+            Open to entry-level Data Analyst, Business Intelligence Analyst, and Data Analytics Intern roles.
+          </p>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-top:18px;">
+            <a href="mailto:vasanthreddy251@gmail.com" class="contact-pill" style="color:#0f172a;">vasanthreddy251@gmail.com</a>
+            <a href="tel:+917093069580" class="contact-pill" style="color:#0f172a;">+91 7093069580</a>
+            <span class="contact-pill" style="color:#0f172a;">Miyapur, Hyderabad, Telangana</span>
+          </div>
+          <div class="hero-cta-row">
+            <a href="https://github.com/hruday59" target="_blank" rel="noopener noreferrer" class="btn-primary">GitHub</a>
+            <a href="https://www.linkedin.com/in/kalluru-hruday-kumar-reddy" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="color:#0f172a;">LinkedIn</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="margin:0 0 12px;font-size:18px;color:#ffffff;">Quick Recruiter Message</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="sender-name">Your Name / Organization</label>
+              <input id="sender-name" type="text" class="form-control" required placeholder="e.g., Priya Sharma — Talent Acquisition" />
+            </div>
+            <div class="form-group">
+              <label for="sender-role">Role / Opportunity Type</label>
+              <input id="sender-role" type="text" class="form-control" required placeholder="e.g., Data Analyst / BI Intern" />
+            </div>
+            <div class="form-group">
+              <label for="sender-message">Message</label>
+              <textarea id="sender-message" rows="3" class="form-control" required placeholder="Hi Hruday, we would like to connect..."></textarea>
+            </div>
+            <div class="hero-cta-row" style="margin-top:10px;">
+              <button type="submit" class="btn-primary">Send via Email Client</button>
+              <button id="copy-message-btn" type="button" class="btn-secondary" style="color:#0f172a;">Copy Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 Kalluru Hruday Kumar Reddy</span>
+      <div style="display:flex;gap:16px;">
+        <a href="https://github.com/hruday59" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/kalluru-hruday-kumar-reddy" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:vasanthreddy251@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="project-modal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button id="close-modal" type="button" class="modal-close" aria-label="Close Modal">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
